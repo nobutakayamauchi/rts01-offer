@@ -2,124 +2,302 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>新規案件 初動フローチャート策定 | RTS Offer</title>
-  <style>
-    body{
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      background:#f6f8fb;
-      color:#111827;
-      line-height:1.7;
-    }
-    .wrap{
-      max-width:860px;
-      margin:0 auto;
-      padding:20px;
-    }
-    .card{
-      background:#fff;
-      border-radius:18px;
-      padding:22px;
-      margin:16px 0;
-      box-shadow:0 8px 24px rgba(0,0,0,.06);
-    }
-    .hero{
-      padding:28px 22px;
-    }
-    .eyebrow{
-      font-size:12px;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      color:#6b7280;
-      margin:0 0 8px;
-    }
-    h1{
-      font-size:32px;
-      line-height:1.2;
-      margin:8px 0 14px;
-    }
-    h2{
-      font-size:22px;
-      margin:0 0 12px;
-    }
-    .lead{
-      font-size:18px;
-      color:#374151;
-    }
-    .price{
-      font-size:30px;
-      font-weight:700;
-      margin:10px 0 12px;
-    }
-    .btn{
-      display:inline-block;
-      background:#111827;
-      color:#fff;
-      text-decoration:none;
-      padding:12px 18px;
-      border-radius:12px;
-      font-weight:600;
-    }
-    .textlink{
-      color:#111827;
-      font-weight:600;
-      text-decoration:none;
-    }
-    ul{
-      padding-left:20px;
-      margin:0;
-    }
-    p{
-      margin:0 0 12px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI開発迷子リセット | 作り散らかったプロジェクトを進められる状態へ</title>
+  <meta name="description" content="ChatGPT、Claude、Codex、Cursorで作り散らかったGitHub repoや構想を棚卸しし、Active / Frozen / Archiveに分類して次の一手を整理する診断サービスです。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI開発迷子リセット | 作り散らかったプロジェクトを進められる状態へ">
+  <meta property="og:description" content="ChatGPT、Claude、Codex、Cursorで作り散らかったGitHub repoや構想を棚卸しし、Active / Frozen / Archiveに分類して次の一手を整理する診断サービスです。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI開発迷子リセット | 作り散らかったプロジェクトを進められる状態へ">
+  <meta name="twitter:description" content="ChatGPT、Claude、Codex、Cursorで作り散らかったGitHub repoや構想を棚卸しし、Active / Frozen / Archiveに分類して次の一手を整理する診断サービスです。">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <main class="wrap">
-    <section class="card hero">
-      <p class="eyebrow">RTS01 10,000円オファー</p>
-      <h1>新規案件、何から作るか決まらないなら<br>最初の1手を60分で決めます。</h1>
-      <p class="lead">「指示が曖昧で止まる」「外注費だけ先に消える」「実装前で詰む」を、10,000円で止血する初動整理です。</p>
-      <p>
-        対象は、<strong>自分で作る人 / 社内に任せる人 / 外注を使う人</strong>。
-        いま必要なのは完璧な計画ではなく、<strong>まず動ける順番と担当の切り分け</strong>です。
-      </p>
-      <p>
-        このサービスで手に入るのは、<strong>最初にやること・誰がやるか・次の一手1本</strong>。
-        迷いを実行可能な1歩に変えます。
-      </p>
-      <p class="price">10,000円</p>
-      <p><a class="btn" href="https://buy.stripe.com/fZufZjc9WaTz51Y2ZB3Nm03">今すぐ申し込む</a></p>
-      <p><a class="textlink" href="https://nobutakayamauchi.github.io/rts01-offer/guide/intake.html">購入後の流れ（準備は完璧でなくてOK）</a></p>
+  <!-- CTA_LINK: 申し込み先を変更する場合は、以下の mailto を全CTAで同じ値にしてください。 -->
+  <main>
+    <section class="hero section" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">RTS Project Audit Offer</p>
+          <h1>AI開発迷子リセット</h1>
+          <p class="target-copy">GitHub repoが増えすぎて、何が本体かわからなくなった人へ。</p>
+          <p class="hero-title">AIで作ったプロジェクト、止まっていませんか？</p>
+          <p class="lead">ChatGPT、Claude、Codex、Cursorで開発を進めると、アイデアもコードもGitHub repoも一気に増えます。<br>でも気づくと、何が本体で、何が実験で、何を残して、何を止めればいいのかわからなくなる。<br>AI開発迷子リセットは、散らかったプロジェクトを棚卸しし、もう一度「進められる状態」に戻す診断サービスです。<br>AIで作りすぎて止まったプロジェクトを、もう一度進められる状態に戻します。</p>
+          <div class="cta-row">
+            <a class="button" href="mailto:ultimaterisingson@proton.me?subject=AI開発迷子リセット相談">初回モニター診断を申し込む</a>
+            <span class="microcopy">初回モニター価格 9,800円 / 相談後に個別案内</span>
+          </div>
+          <p class="cta-note">申し込み後すぐに決済は発生しません。まずはメールで内容を確認します。</p>
+        </div>
+        <div class="hero-panel" aria-label="棚卸し結果のイメージ">
+          <p class="panel-label">Project Audit Map</p>
+          <div class="status-card active"><strong>Active</strong><span>今進める本体</span></div>
+          <div class="status-card frozen"><strong>Frozen</strong><span>今は止める候補</span></div>
+          <div class="status-card archive"><strong>Archive</strong><span>残すが触らない実験</span></div>
+          <p class="panel-note">散らかったrepo・README・試作品を、次に進める地図へ戻します。</p>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>この1万円で解決すること</h2>
-      <ul>
-        <li>何を先に作るべきかが決まる</li>
-        <li>誰が何を担当するかが明確になる</li>
-        <li>外注 / 自社 / AI活用の判断軸が揃う</li>
-        <li>セッション直後に着手する1アクションが確定する</li>
-      </ul>
+    <section class="section">
+      <div class="container card">
+        <h2>こんな状態になっていませんか？</h2>
+        <div class="check-grid">
+          <div>GitHub repoが増えすぎて、どれが本体かわからない</div>
+          <div>AIに作らせたコードの全体像が見えない</div>
+          <div>READMEはあるけど、現在地がわからない</div>
+          <div>MVP候補が複数あって絞れない</div>
+          <div>収益化したいが、何を商品にすべきかわからない</div>
+          <div>新しい機能を足すたびに、さらに混乱する</div>
+          <div>CodexやClaudeに次何を頼めばいいかわからない</div>
+        </div>
+        <p class="note">3つ以上当てはまるなら、次に必要なのは追加実装ではなく、プロジェクトの棚卸しです。</p>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>低リスクで始められる理由</h2>
-      <p>
-        これは大きなコンサル契約ではありません。
-        新規案件1件を「実装前の渋滞」から抜け出すための軽量な初動サービスです。
-      </p>
-      <p>
-        先にここを押さえるだけで、曖昧発注や手戻りによる時間・コストのロスを減らせます。
-      </p>
+    <section class="section muted">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">Problem</p>
+          <h2>AI開発で起きやすい問題</h2>
+          <p class="large">AIは作る速度を上げます。<br>でも、整理する速度までは自動で上げてくれません。</p>
+        </div>
+        <div class="card compact">
+          <ul class="pill-list">
+            <li>repoが増える</li>
+            <li>READMEが古くなる</li>
+            <li>実験と本体が混ざる</li>
+            <li>目的と実装がズレる</li>
+            <li>進捗が見えなくなる</li>
+            <li>収益化候補が散らばる</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <p class="highlight">AI時代の個人開発・小規模開発で本当に危ないのは、「作れないこと」ではなく、作れすぎて全体像を失うことです。</p>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>参考リンク（任意）</h2>
-      <p><a class="textlink" href="https://nobutakayamauchi.github.io/rts01-offer/legal/tokushoho.html">特定商取引法に基づく表記</a></p>
-      <p><a class="textlink" href="https://github.com/nobutakayamauchi/RTS">RTS Public Repository</a></p>
+    <section class="section">
+      <div class="container card accent-card">
+        <p class="eyebrow">Service</p>
+        <h2>このサービスでやること</h2>
+        <p class="large">あなたのプロジェクトを棚卸しし、進める順番を取り戻します。</p>
+        <ol class="steps five-items">
+          <li>何が本体か</li>
+          <li>何が実験か</li>
+          <li>何を止めるべきか</li>
+          <li>何が収益化候補か</li>
+          <li>次に何を作るべきか</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>納品物</h2>
+        <div class="deliverables">
+          <div>プロジェクト全体構造マップ</div>
+          <div>repo別の役割分類</div>
+          <div>Active / Frozen / Archive 判定</div>
+          <div>repo別の進捗評価</div>
+          <div>収益化候補の整理</div>
+          <div>捨てるもの / 残すものの判断</div>
+          <div>次の7日間の作業順</div>
+          <div>AIに渡せる次アクション指示</div>
+        </div>
+        <p class="note">納品形式: Markdown / PDF</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card">
+        <h2>診断イメージ</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Repo</th><th>Layer</th><th>Status</th><th>Next Action</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>RTS</td><td>Core</td><td><span class="status active">Active</span></td><td>Hub化</td></tr>
+              <tr><td>RTS-Minimal-Runtime</td><td>Core</td><td><span class="status active">Active</span></td><td>run.py追加</td></tr>
+              <tr><td>RTS-AGE</td><td>Builder</td><td><span class="status active">Active</span></td><td>README整理</td></tr>
+              <tr><td>seminar-compass</td><td>Product</td><td><span class="status active">Active</span></td><td>デモLP作成</td></tr>
+              <tr><td>AIX</td><td>Product</td><td><span class="status frozen">Frozen</span></td><td>後回し</td></tr>
+              <tr><td>codex-connector-test</td><td>Test</td><td><span class="status archive">Archive</span></td><td>archive</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container split-cards">
+        <div class="card before">
+          <h2>Before</h2>
+          <ul>
+            <li>GitHub repoが増えすぎて、何が本体で何が実験かわからない</li>
+            <li>AIで作ったコードはあるが、どこから直せばいいかわからない</li>
+            <li>アイデアはあるが、商品として何を出せばいいかわからない</li>
+          </ul>
+        </div>
+        <div class="card after">
+          <h2>After</h2>
+          <ul>
+            <li>Active / Frozen / Archive が明確になる</li>
+            <li>今やるrepoと、今は触らないrepoが分かれる</li>
+            <li>収益化候補が絞られる</li>
+            <li>次の7日間でやることが決まる</li>
+            <li>AIに依頼する内容も具体化される</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <p class="eyebrow">Pricing</p>
+        <h2>料金</h2>
+        <div class="pricing-grid">
+          <article class="price-card featured">
+            <span class="recommend-label">まずはこれ</span>
+            <h3>ライト診断</h3>
+            <p class="price">初回モニター価格 9,800円</p>
+            <ul>
+              <li>repo / 構想の簡易棚卸し</li>
+              <li>Active / Frozen / Archive 分類</li>
+              <li>repo別ひとこと診断</li>
+              <li>次にやるべき3手</li>
+            </ul>
+            <p class="delivery">納品: 1〜3ページ相当のMarkdownレポート</p>
+          </article>
+          <article class="price-card">
+            <h3>標準診断</h3>
+            <p class="price">39,800円</p>
+            <ul>
+              <li>repo別進捗評価</li>
+              <li>全体構造マップ</li>
+              <li>収益化候補の整理</li>
+              <li>技術負債 / ノイズrepoの判定</li>
+              <li>次の7日間の作業計画</li>
+              <li>README改善案</li>
+            </ul>
+            <p class="delivery">納品: 5〜10ページ相当のMarkdown / PDFレポート</p>
+          </article>
+          <article class="price-card">
+            <h3>再構成パック</h3>
+            <p class="price">98,000円〜</p>
+            <ul>
+              <li>GitHub構造の再設計</li>
+              <li>MVP範囲の決定</li>
+              <li>実装指示書作成</li>
+              <li>LP文言作成</li>
+              <li>次の開発spec作成</li>
+            </ul>
+            <p class="delivery">納品: プロジェクト再構成レポート、実装ロードマップ、LPたたき台、AI開発用プロンプト / spec</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container card payment-card">
+        <p class="eyebrow">Payment</p>
+        <h2>お支払い方法</h2>
+        <p class="large">申し込み後すぐに決済は発生しません。<br>まずはメールで内容を確認し、対応可否・納期・支払い方法をご案内します。</p>
+        <p>支払い方法は銀行振込 / Stripe決済リンク / Square請求書に対応予定です。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card">
+        <h2>進め方</h2>
+        <ol class="steps">
+          <li>申し込み</li>
+          <li>GitHub repo / 資料 / 構想メモを共有</li>
+          <li>プロジェクト全体を棚卸し</li>
+          <li>レポート作成</li>
+          <li>次の7日間の作業順を提案</li>
+        </ol>
+        <p class="note">必要なのは、完璧な資料ではありません。むしろ散らかっている状態のままで大丈夫です。</p>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container split-cards">
+        <div class="card">
+          <h2>対象者</h2>
+          <ul>
+            <li>AIで個人開発をしている人</li>
+            <li>Claude / ChatGPT / Codex / Cursorを使っている人</li>
+            <li>GitHub repoが増えすぎた人</li>
+            <li>MVP候補が複数あって絞れない人</li>
+            <li>AIに次何を頼めばいいかわからない人</li>
+            <li>収益化したいが、商品が定まらない人</li>
+            <li>作ったものを一度整理して前に進めたい人</li>
+          </ul>
+        </div>
+        <div class="card subtle-card">
+          <h2>対象外</h2>
+          <ul>
+            <li>すでに開発体制が完全に整っている</li>
+            <li>単純なバグ修正だけを依頼したい</li>
+            <li>完成品アプリの丸投げ開発をしたい</li>
+            <li>とにかく今すぐ大量実装だけしたい</li>
+          </ul>
+          <p class="note">このサービスは、実装代行ではなく、プロジェクトを前に進めるための整理・再構成サービスです。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">FAQ</p>
+        <h2>よくある質問</h2>
+        <div class="faq-list">
+          <details open>
+            <summary>コードが未完成でも大丈夫ですか？</summary>
+            <p>大丈夫です。未完成の状態こそ、棚卸しの効果が出やすいです。</p>
+          </details>
+          <details>
+            <summary>GitHub repoが多くても見てもらえますか？</summary>
+            <p>見られます。ただし最初は、主要repoを中心に整理します。</p>
+          </details>
+          <details>
+            <summary>AIが作ったコードでも大丈夫ですか？</summary>
+            <p>大丈夫です。むしろこのサービスは、AIで作ったコードやrepoが増えすぎた人向けです。</p>
+          </details>
+          <details>
+            <summary>収益化の相談もできますか？</summary>
+            <p>できます。技術的な完成度だけでなく、「どれを商品にすべきか」も整理します。</p>
+          </details>
+          <details>
+            <summary>実装もしてくれますか？</summary>
+            <p>基本は診断・整理・設計です。必要に応じて、次にAIや開発者へ渡せる実装指示書を作成します。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="container card accent-card center">
+        <p class="eyebrow">Reset and move forward</p>
+        <h2>AIで作ったプロジェクトを、もう一度進められる状態に戻しませんか？</h2>
+        <p class="large">GitHub repo、README、試作品、構想メモを棚卸しし、何を残し、何を止め、次に何を作るべきかを整理します。</p>
+        <a class="button" href="mailto:ultimaterisingson@proton.me?subject=AI開発迷子リセット相談">初回モニター診断を申し込む</a>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>AI開発迷子リセット / RTS Project Audit Offer</p>
+      <nav aria-label="フッターリンク">
+        <a href="/rts01-offer/legal/tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="mailto:ultimaterisingson@proton.me?subject=AI開発迷子リセット相談">お問い合わせ</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
