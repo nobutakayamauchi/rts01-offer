@@ -24,13 +24,20 @@ https://nobutakayamauchi.github.io/rts01-offer/
 
 ## CTAリンク
 
-CTAリンクは、現在 `ultimaterisingson@proton.me` 宛て（件名: `AI開発迷子リセット相談`）です。
+CTAリンクは、現在 `ultimaterisingson@proton.me` 宛て（件名: `AI開発迷子リセット相談`）です。URLエンコード済みmailtoを使います。
 
 ```text
-mailto:ultimaterisingson@proton.me?subject=AI開発迷子リセット相談
+mailto:ultimaterisingson@proton.me?subject=AI%E9%96%8B%E7%99%BA%E8%BF%B7%E5%AD%90%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E7%9B%B8%E8%AB%87
 ```
 
-差し替える場合は、`index.html` 内の `CTA_LINK` コメント付近にあるCTAリンクの `href` を変更してください。Hero CTA、最終CTA、Footerのお問い合わせリンクは同じ申し込み先に揃えてください。
+差し替える場合は、`index.html` 内の `CTA_LINK` コメント付近にあるCTAリンクの `href` を変更してください。Hero CTA、料金カードCTA、最終CTA、Footerのお問い合わせリンクは同じ申し込み先に揃えてください。
+
+## 共有時の注意
+
+- APIキー、パスワード、秘密鍵、個人情報は送らない
+- private repoは必要範囲だけ共有する
+- このLPはRTSの考え方を使った外向き診断サービスであり、RTS Coreそのものの販売ではない
+- CTAリンクはURLエンコード済みmailtoを使う
 
 ## 決済について
 
