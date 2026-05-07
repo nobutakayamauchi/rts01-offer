@@ -398,6 +398,11 @@ tr:last-child td {
   transform: translateY(-8px);
 }
 
+.price-card .button {
+  margin-top: 4px;
+  width: 100%;
+}
+
 .price {
   margin-bottom: 0;
   color: var(--primary-dark);
