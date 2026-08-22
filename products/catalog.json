@@ -1,0 +1,32 @@
+{
+  "seller": {
+    "name": "山内 延天",
+    "trade_name": "risingson",
+    "email": "ultimaterisingson@gmail.com"
+  },
+  "products": [
+    {
+      "slug": "webai-bridge",
+      "name": "WebAI-Bridge",
+      "status": "PRE_SALE",
+      "sales_channel": "Brain",
+      "sales_url": null,
+      "legal_url": "/legal/products/webai-bridge.html",
+      "price_jpy": 98000,
+      "initial_price_limit": 5,
+      "delivery_type": "DIGITAL_ACCESS_ENVIRONMENT",
+      "notes": "Brain販売URL確定後にsales_urlを設定する"
+    },
+    {
+      "slug": "initial-flow",
+      "name": "新規案件 初動フローチャート策定",
+      "status": "ACTIVE",
+      "sales_channel": "GitHub Pages / Stripe",
+      "sales_url": "/offer/initial-flow.html",
+      "legal_url": "/legal/tokushoho.html",
+      "price_jpy": 10000,
+      "delivery_type": "SERVICE",
+      "notes": "既存商品。互換維持"
+    }
+  ]
+}
