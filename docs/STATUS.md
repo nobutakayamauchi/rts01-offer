@@ -1,67 +1,56 @@
 # rts01-offer Status
 
-Status: ACTIVE / SALES-LP / MINIMUM ALIVE
+Status: ACTIVE / MULTI-PRODUCT SALES + LEGAL HUB / STATIC
 
-rts01-offer is the external landing page for the AI development reset / project audit offer.
-
-It is a static sales page for explaining the offer, collecting interest, and directing prospects to contact the operator.
-
-It is not the delivery workflow itself.
-
-It is not RTS core.
-
-It is not RTS-minicompany.
+`rts01-offer` is the public static sales/legal surface for risingson offers.
 
 ## Current Position
 
-This repository should remain a simple, reviewable, static LP.
+The original project-audit / initial-flow offer remains available, but the repository now also provides a reusable structure for additional products.
 
-Allowed by default:
+Canonical public surfaces:
 
-- edit static copy
-- clarify offer positioning
-- clarify target customer pain
-- clarify what the offer does and does not include
-- update contact instructions
-- improve page structure
-- improve accessibility and readability
-- add non-sensitive documentation
+- `/products/index.html` — product catalog
+- `/products/catalog.json` — compact product registry
+- `/legal/index.html` — seller-wide legal index
+- `/legal/products/<slug>.html` — product-specific Tokushoho page
+- `/offer/<slug>.html` — optional hosted sales LP
 
-Prohibited by default:
+Existing legacy product paths remain valid unless explicitly migrated.
 
-- adding automatic checkout behavior
-- adding customer database behavior
-- adding account login behavior
-- adding hidden tracking behavior
-- promising guaranteed revenue or outcomes
-- changing delivery scope without updating the operating workflow
-- turning this repository into the delivery system
-- merging this repository into RTS core
+## Boundary
 
-## Offer Boundary
+This repository owns public sales/legal presentation only.
 
-The LP may describe the offer.
+It does not own product runtime, customer state, authentication, product secrets, or commercial core implementation.
 
-The LP must not overpromise the result.
+For each product, runtime facts must be verified against that product's implementation repository before sales/legal copy is published.
 
-The LP should point to a human-reviewed intake or contact path.
+For WebAI-Bridge:
 
-Actual delivery should be handled by the operator and related operating repositories, especially RTS-minicompany or future project audit workflows.
+- public/runtime authority: `nobutakayamauchi/WebAI-Bridge`
+- private commercial/runtime authority: `nobutakayamauchi/WebAI-Bridge-Core`
 
-## Minimum Alive Definition
+## Current WebAI-Bridge Sales State
 
-This repository is considered Minimum Alive when:
+WebAI-Bridge has a product-specific legal page in development. Its Brain sales URL is intentionally left as a development placeholder until the real sales URL is known.
 
-1. Its role as a static offer LP is explicit.
-2. Its relation to delivery workflows is documented.
-3. Its agent rules prevent over-automation and overpromising.
-4. Its next safe tasks are listed.
-5. No runtime or external behavior is changed by the rescue documentation itself.
+Do not publish a placeholder purchase link as if it were live.
 
-## Current Decision
+## Allowed Changes
 
-Keep this repository.
+- static copy and layout
+- adding product catalog entries
+- adding product-specific legal pages
+- adding external sales links after verification
+- adding public guides/links
+- accessibility/readability improvements
 
-Treat it as an external sales surface for project audit / reset work.
+## Prohibited by Default
 
-Do not convert it into a full application until the underlying delivery workflow is stable.
+- product runtime
+- account/customer database behavior
+- secrets/private-core content
+- hidden tracking
+- automatic payment fulfillment
+- guaranteed outcome claims
