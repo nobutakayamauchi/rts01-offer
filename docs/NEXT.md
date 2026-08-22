@@ -1,37 +1,41 @@
 # rts01-offer Next Actions
 
-The next goal is Minimum Alive validation for the static offer page.
+## Immediate
 
-## Next Tasks
+1. Confirm the real Brain sales URL for WebAI-Bridge.
+2. Replace the development placeholder in `legal/products/webai-bridge.html`.
+3. Add the same sales URL to `products/catalog.json` and `products/index.html`.
+4. Ensure the Brain sales article links to the WebAI-Bridge legal page.
+5. After merge, confirm GitHub Pages serves `/products/`, `/legal/`, and `/legal/products/webai-bridge.html`.
 
-1. Confirm the published/static page path.
-2. Confirm the contact path shown on the page.
-3. Confirm the offer copy matches the current delivery workflow.
-4. Confirm that the page does not overpromise results.
-5. Document the relationship with RTS-minicompany or the future project audit workflow.
+## For Every New Product
 
-## Suggested Follow-up Files
+Use `docs/MULTI_PRODUCT_SALES_LEGAL.md`.
 
-```text
-docs/validation/minimum_alive_validation.md
-docs/relations/delivery_workflow_relation.md
-docs/contracts/offer_boundary.md
-```
+Minimum additions:
 
-## Do Not Do Yet
+- one catalog entry
+- one product-specific legal page
+- one catalog card
+- one verified sales URL or explicit PRE_SALE state
 
-Do not:
+## Verification
 
-- turn the LP into a full application
-- add account flows
-- add customer storage behavior
-- add automatic payment behavior
-- add hidden tracking behavior
-- promise guaranteed outcomes
-- change offer scope without updating delivery workflow
+Before publishing, confirm:
 
-## Next Recommended Task
+- price / quantity tier
+- payment method and timing
+- delivery timing
+- included deliverables/features
+- extra API/external-service costs
+- cancellation/refund boundary
+- support/recovery fees
+- legal contact route
+- product claims against implementation repository
 
-Create `docs/relations/delivery_workflow_relation.md`.
+## Do Not Do
 
-That file should explain which repository or manual workflow actually delivers the offer behind this LP.
+- do not place secrets in this repository
+- do not copy private-core source into sales pages
+- do not leave `example.invalid` or other placeholder purchase links on a live page
+- do not use sales/legal copy as runtime authority
