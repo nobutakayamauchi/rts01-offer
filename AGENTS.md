@@ -4,15 +4,17 @@ These instructions apply to AI coding agents working in this repository.
 
 ## Repository Role
 
-rts01-offer is a static sales landing page for the AI development reset / project audit offer.
+`rts01-offer` is the public static sales/legal hub for risingson offers.
 
-It explains the offer and directs prospects to a human-reviewed contact path.
+It may contain:
 
-It is not RTS core.
+- static sales LPs
+- product catalog/index pages
+- product-specific legal disclosures
+- public setup/usage guides and links
+- conservative product descriptions
 
-It is not the delivery workflow itself.
-
-It is not a full application.
+It is not RTS core, WebAI-Bridge runtime, WebAI-Bridge-Core, or a delivery application.
 
 ## Required Reading
 
@@ -21,75 +23,58 @@ Before editing, read:
 1. `README.md`
 2. `docs/STATUS.md`
 3. `docs/NEXT.md`
+4. `docs/MULTI_PRODUCT_SALES_LEGAL.md` when touching product sales/legal content
 
 ## Default Mode
 
-Use strict minimal patch mode unless the task explicitly says otherwise.
+Prefer small, reviewable static changes.
 
-Prefer:
-
-- small static copy changes
-- clear offer positioning
-- conservative claims
-- human-reviewed contact paths
-- simple HTML/CSS changes
-- documentation before workflow expansion
+- keep implementation and delivery authority in the product repository
+- verify product capabilities against the product repository before publishing claims
+- keep seller-wide legal information centralized and product terms product-specific
+- preserve existing public paths unless migration is explicitly approved
+- use human-readable HTML/CSS and simple data files
 
 ## Forbidden by Default
 
-Do not perform any of the following without explicit operator approval in the current task:
+Do not, without explicit operator approval:
 
-- add account flows
+- add customer account flows
 - add customer storage behavior
-- add automatic payment behavior
+- add automatic checkout/runtime behavior
 - add hidden tracking behavior
 - add background jobs
 - promise guaranteed outcomes
-- change offer scope without updating delivery workflow
-- convert this LP into the delivery system
-- merge this repository into RTS core
-- broad refactor
+- expose secrets/private-core material
+- turn this repository into product runtime or delivery authority
 
-If a task appears to require one of these, stop and write a proposal.
+## Product Authority Rule
 
-## Offer Boundary
+Sales/legal copy is descriptive only.
 
-This repository may describe an offer.
+When a sales/legal claim conflicts with implementation, the implementation repository wins. Correct the sales/legal copy; do not alter runtime merely to preserve marketing text.
 
-It must not imply that the LP itself performs the delivery workflow.
+For WebAI-Bridge, check both:
 
-It must not overpromise revenue, speed, business outcomes, or automation capability.
+- `nobutakayamauchi/WebAI-Bridge`
+- `nobutakayamauchi/WebAI-Bridge-Core`
 
-Delivery should remain human-reviewed until the related operating workflow is explicitly stabilized.
+## Multi-product Paths
+
+```text
+/products/index.html
+/products/catalog.json
+/legal/index.html
+/legal/products/<slug>.html
+/offer/<slug>.html
+```
+
+Existing legacy paths may remain for compatibility.
 
 ## Change Scope Rule
 
-Before editing, identify:
-
-- files you plan to change
-- files you will not touch
-- assumptions
-- risks
-- stop conditions
-
-After editing, report:
-
-- changed files
-- what changed
-- what did not change
-- validation performed
-- remaining risks
-- recommended next task
+Before editing, identify intended files, assumptions, risks, and stop conditions. After editing, report changed files, validation, remaining placeholders, and the next operator action.
 
 ## Unknown Handling
 
-When uncertain, classify the unknown as:
-
-- offer unknown
-- delivery unknown
-- copywriting unknown
-- positioning unknown
-- runtime unknown
-- operator intent unknown
-
-Then either proceed with the smallest safe static edit or stop with a proposal.
+Do not invent unknown price, payment, delivery, refund, or runtime facts. Keep a development-only placeholder or stop for operator input.
