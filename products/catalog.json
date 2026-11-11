@@ -15,7 +15,9 @@
       "price_jpy": 98000,
       "initial_price_limit": 5,
       "delivery_type": "DIGITAL_ACCESS_ENVIRONMENT",
-      "notes": "Brain販売URL確定後にsales_urlを設定する"
+      "notes": "PRE_SALEとsales_url未設定はBrainチャネルの状態。別チャネルのSales Catalogには98,000円の案内があり、提供版・条件を購入前相談で確認する。Brainの数量・提供条件をStripeへ自動適用しない。",
+      "status_scope": "sales_channel",
+      "sales_catalog_url": "https://nobutakayamauchi.github.io/sales-catalog/products/webai-bridge/sales.html"
     },
     {
       "slug": "initial-flow",
